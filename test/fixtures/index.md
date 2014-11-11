@@ -5,5 +5,5 @@ category : articles
 tags : [markdown, converter, jekyll]
 ---
 
-
-![imageResize {max-width:300px;}](./images/test.png imageResize)
+![originalSize](./images/test.png "originalSize")
+![imageResize {max-width:300px;}](./images/test.png "imageResize")

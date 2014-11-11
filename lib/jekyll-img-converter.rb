@@ -9,17 +9,19 @@ module Jekyll
       # content &&= content
       pattern = /({)(.+)(})/
       matchData = pattern.match(content)
-      stripContent = content.gsub(matchData[0],'')
-
+      
       imgTag = "<img src=\"#{link}\""
+      
       if (matchData)
-        imgTag = imgTag + " alt=\"#{stripContent}\" style=\"#{matchData[0]}\""
+        style = matchData[0]
+        stripContent = content.gsub(style,'')
+        imgTag += " alt=\"#{stripContent}\" style=\"#{style}\""
       else
-        imgTag = imgTag + " alt=\"#{content}\""
+        imgTag += " alt=\"#{content}\""
       end
 
       if(title)
-        imgTag = imgTag = " title=\"#{title}\""
+        imgTag += " title=\"#{title}\""
       end
 
       imgTag = imgTag + "/>"

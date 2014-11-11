@@ -2,7 +2,7 @@ Gem::Specification.new do |s|
   s.name        = "jekyll-img-converter"
   s.summary     = "Jekyll IMG tag conveter in markdown using with Redcarpet"
   s.description = "jekyll-img-converter is support to convert IMG tag with inline style from markdown using with Redcarpet"
-  s.version     = "0.1.0"
+  s.version     = "0.1.1"
   s.authors     = ["SungKwang Song"]
   s.email       = "saltfactory@gmail.com"
 
