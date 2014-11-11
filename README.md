@@ -39,6 +39,14 @@ gems:
 	- jekyll-img-conveter
 ```
 
+and bundle install
+
+```
+bundle install
+```
+
+
+
 ## Manually install (git)
 
 Clone sources from https://github.com/saltfactory/jekyll-img-conveter.
