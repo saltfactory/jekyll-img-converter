@@ -13,7 +13,7 @@ module Jekyll
       imgTag = "<img src=\"#{link}\""
       
       if (matchData)
-        style = matchData[0]
+        style = matchData[2]
         stripContent = content.gsub(style,'')
         imgTag += " alt=\"#{stripContent}\" style=\"#{style}\""
       else
