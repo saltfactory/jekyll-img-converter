@@ -17,7 +17,7 @@ e.g.
 ![alt {max-width:320px;}]('./images/test.png' title)
 ```
 
-This is converted the next
+This will convert from markdown to HTML.
 
 ```html
 <img src="./images/test.png" alt="alt" title="title" style="{max-width:320px;}"/>
@@ -58,6 +58,35 @@ git clone https://github.com/saltfactory/jekyll-img-converter.git
 and copy `jekyll-img-converter.rb` file to `_plugins` in Jekyll project.
 
 
+## jekyll-img-converter.js
+
+If you publish jekyll site via [Github pages](https://pages.github.com), you can't use local plugins.
+So you need ***jekyll-img-converter.js*** in `/lib/jekyll-img-converter.js` file.
+
+If you created a markdown file with **IMG** style in a **alt** attribute. you can convert by ***jekyll-img-converter.js***.
+
+e.g.
+
+```markdown
+![alt {max-width:320px;}]('./images/test.png' title)
+```
+
+This will convert from markdown to HTML
+
+```html
+<img src="./images/test.png" alt="alt" title="title" style="{max-width:320px;}"/>
+```
+
+Copy `lib/jekyll-img-converter.js` in repository to `javascripts/jekyll-img-converter.js` in Jekyll project.
+and insert the next code above `</body>` in `_layouts/default.html` file
+
+```html
+<script src="{{ "/javascripts/jekyll-img-converter.js" | prepend: site.baseurl }}"></script>
+</body>
+```
+
+
+
 License
 ========
 
@@ -82,6 +111,3 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
-
-
-
