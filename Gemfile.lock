@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    jekyll-img-converter (0.1.1)
+    jekyll-img-converter (0.1.2)
       html-pipeline (~> 1.9)
       jekyll (~> 2.0)
 

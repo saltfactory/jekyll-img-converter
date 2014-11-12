@@ -14,7 +14,8 @@ module Jekyll
       
       if (matchData)
         style = matchData[2]
-        stripContent = content.gsub(style,'')
+        # puts matchData.to_s
+        stripContent = content.gsub(matchData.to_s,'')
         imgTag += " alt=\"#{stripContent}\" style=\"#{style}\""
       else
         imgTag += " alt=\"#{content}\""
