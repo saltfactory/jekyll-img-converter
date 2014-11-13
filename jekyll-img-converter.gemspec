@@ -17,7 +17,4 @@ Gem::Specification.new do |s|
   s.add_development_dependency  'shoulda', '~> 3.5'
   s.add_development_dependency  'minitest', '~> 5.4'
   s.add_development_dependency  'redcarpet', '~> 3.2'
-  s.add_development_dependency 'jekyll_test_plugin'
-  s.add_development_dependency 'jekyll_test_plugin_malicious'
-  s.add_development_dependency 'test-unit'
 end
